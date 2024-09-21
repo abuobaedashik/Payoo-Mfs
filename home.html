@@ -6,11 +6,69 @@
     <title>HomePage</title>
     <!-- daisy UI cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1 text-align:center> Welcome To HomePage </h1>
+    <main class="flex items-center justify-center">
+        <!-- homepage -->
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-1">
+                 <!-- currenty logo  -->
+                 
+
+                  <!-- balance -->
+                  <div class="mt-9 bg-white rounded-lg shadow">
+                    <div class="stat">
+                      <div class=" flex items-center ">
+                        <h2 class="text-xl font-bold">4000</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 7.5.415-.207a.75.75 0 0 1 1.085.67V10.5m0 0h6m-6 0h-1.5m1.5 0v5.438c0 .354.161.697.473.865a3.751 3.751 0 0 0 5.452-2.553c.083-.409-.263-.75-.68-.75h-.745M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                          </svg>
+                      </div>
+                      <div class="stat-desc">Available Balance</div>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                   <!--add money and cash out button  -->
+                    <div class="flex gap-7">
+                        <button class="btn bg-white">Add Money</button>
+                        <button class="btn bg-white">Cash Out</button>
+                    </div>
+                    <div class="divider"></div>
+                    <!-- add money form -->
+                    <div class="mt-0 mb-3">
+                        <form class="mt-0">
+                            <div class="mt0">
+                                <label class="label">
+                                  <span class="label-text">Amount</span>
+                                </label>
+                                <input id="money-amount" type="text" placeholder="Amount" class="input " required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Phone Number</span>
+                                </label>
+                                <input id="phone-number" type="text" placeholder="Your Number" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span  class="label-text">Pin</span>
+                                </label>
+                                <input id="pin-Num" type="password" placeholder="pin" class="input input-bordered" autocomplete="off" required />
+                              </div>
+                          <div class="form-control mt-6">
+                            <button id="add-money-btn" class="btn btn-primary">Add Money</button>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/home.js"></script>
 </body>
 </html>
