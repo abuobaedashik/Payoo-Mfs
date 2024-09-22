@@ -5,7 +5,7 @@ document.getElementById('btn-login').addEventListener('click',function (event) {
    const phoneNum = document.getElementById('phone-number').value;
    const pinNum = document.getElementById('pin-number').value;
    
-   if (phoneNum === '0177' && pinNum=== '1234') {
+   if (phoneNum === '01765262296' && pinNum=== '1234') {
      console.log('You Are Logged in ');
      window.location.href='./home.html';
    }
