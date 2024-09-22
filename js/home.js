@@ -7,19 +7,17 @@ document.getElementById('add-money-btn').addEventListener('click',
     const pinNum =document.getElementById('pin-Num').value;
     
     if (phoneNumber==='01765262296' && pinNum ==='1234') {
-        console.log('Your Money Adding to Your Account')
+     // main balance 
+     const currentBalance =document.getElementById('current-money').innerText;
+     // new balance 
+     const newBalance=parseFloat(currentBalance)+parseFloat(moneyAmoutInput);
+     document.getElementById('current-money').innerText =newBalance.toFixed(2);
     }
 
     else{
         alert('Faild to Add Money! Please Try Again')
     }
 
-    // main balance 
-    const currentBalance =document.getElementById('current-money').innerText;
-
-    // new balance 
-    const newBalance=parseFloat(currentBalance)+parseFloat(moneyAmoutInput);
-    document.getElementById('current-money').innerText =newBalance.toFixed(2);
 })
 // cash out
 // document.getElementById('cash-out-btn').addEventListener('click',
